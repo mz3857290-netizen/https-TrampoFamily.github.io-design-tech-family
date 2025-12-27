@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Design Tech Family</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0066cc;
+            --primary-dark: #004c99;
+            --light: #f8f9fa;
+            --dark: #2d3436;
+            --gray: #6c757d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0066cc 0%, #003d80 100%);
+            color: white;
+            padding: 5rem 1rem 6rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(2.6rem, 7vw, 4.5rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 680px;
+            margin: 1rem auto 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: -4.5rem auto 4rem;
+            padding: 0 1.5rem;
+        }
+
+        .family-chart, .journey {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            padding: 3rem;
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            text-align: center;
+            margin-bottom: 2.5rem;
+            font-weight: 600;
+        }
+
+        .tree {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.8rem;
+        }
+
+        .generation {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.6rem 2.4rem;
+            width: 100%;
+            position: relative;
+        }
+
+        .member {
+            text-align: center;
+            width: 170px;
+        }
+
+        .member h3 {
+            font-size: 1.05rem;
+            margin-bottom: 0.15rem;
+            color: var(--primary-dark);
+        }
+
+        .member .spouse {
+            font-size: 0.92rem;
+            color: var(--primary);
+            font-weight: 500;
+            margin-top: 0.2rem;
+            display: block;
+        }
+
+        .member p {
+            color: var(--gray);
+            font-size: 0.8rem;
+            margin-top: 0.3rem;
+        }
+
+        .connector-v {
+            width: 3px;
+            height: 110px;
+            background: var(--primary);
+            border-radius: 3px;
+        }
+
+        .grand-children {
+            gap: 1.2rem 2rem;
+        }
+
+        .grand-children .member h3 {
+            font-size: 0.98rem;
+        }
+
+        .grand-children .member p {
+            font-size: 0.75rem;
+        }
+
+        .journey-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .journey p {
+            margin-bottom: 1.4rem;
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        .highlight {
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .generation {
+                gap: 1.2rem 1.8rem;
+            }
+            .member {
+                width: 140px;
+            }
+            .family-chart, .journey {
+                padding: 2rem 1.2rem;
+            }
+            .connector-v {
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DESIGN TECH FAMILY</h1>
+    <p>A legacy built on values, vision, hard work, and generations of dedication</p>
+</header>
+
+<div class="container">
+
+    <div class="family-chart">
+        <h2>Our Family Legacy</h2>
+
+        <div class="tree">
+
+            <div class="generation">
+                <div class="member">
+                    <h3>Rahimulla Khan</h3>
+                    <p>Grandfather</p>
+                </div>
+                <div class="member">
+                    <h3>Rasidan Khatoon</h3>
+                    <p>Grandmother</p>
+                </div>
+            </div>
+
+            <div class="connector-v"></div>
+
+            <div class="generation">
+                <div class="member">
+                    <h3>Mr. Salamtullah</h3>
+                    <p>Father of the Founder<br>& First CEO</p>
+                </div>
+                <div class="member">
+                    <h3>Nafisa Khatoon</h3>
+                    <p>Mother of the Founder</p>
+                </div>
+            </div>
+
+            <div class="connector-v"></div>
+
+            <div class="generation">
+                <div class="member">
+                    <h3>Yahya Khan</h3>
+                    <span class="spouse">Saira Bano</span>
+                    <p>1st Son</p>
+                </div>
+                <div class="member">
+                    <h3>Ayyub Khan</h3>
+                    <span class="spouse">Anjum Khatoon</span>
+                    <p>2nd Son</p>
+                </div>
+                <div class="member">
+                    <h3>Shahnaj Khatoon</h3>
+                    <span class="spouse">Mustakim Ahmad</span>
+                    <p>1st Daughter</p>
+                </div>
+                <div class="member">
+                    <h3>Asad Khan</h3>
+                    <span class="spouse">Shabnam</span>
+                    <p>3rd Son</p>
+                </div>
+                <div class="member">
+                    <h3>Nasreen Khatoon</h3>
+                    <span class="spouse">Shameem Ahmad</span>
+                    <p>2nd Daughter</p>
+                </div>
+                <div class="member">
+                    <h3>Sajid Khan</h3>
+                    <span class="spouse">Farhana</span>
+                    <p>4th Son</p>
+                </div>
+                <div class="member">
+                    <h3>Wajid Khan</h3>
+                    <span class="spouse">Anjum (Sweety)</span>
+                    <p>5th Son</p>
+                </div>
+            </div>
+
+            <div class="connector-v" style="height: 130px;"></div>
+
+            <!-- Grandchildren generation -->
+            <div class="generation grand-children" style="position: relative;">
+
+                <!-- Yahya & Saira Bano -->
+                <div class="member">
+                    <h3>Zubair Yahya Khan</h3>
+                    <p>1st Grandson</p>
+                </div>
+                <div class="member">
+                    <h3>Shifa Yahya</h3>
+                    <p>1st Granddaughter</p>
+                </div>
+                <div class="member">
+                    <h3>Iqra Yahya</h3>
+                    <p>2nd Granddaughter</p>
+                </div>
+                <div class="member">
+                    <h3>Zaid Yahya Khan</h3>
+                    <p>2nd Grandson</p>
+                </div>
+
+                <!-- Ayyub & Anjum Khatoon -->
+                <div class="member">
+                    <h3>Awesh Ayyub Khan</h3>
+                    <p>Grandson</p>
+                </div>
+                <div class="member">
+                    <h3>Alfisha Ayyub</h3>
+                    <p>Granddaughter</p>
+                </div>
+                <div class="member">
+                    <h3>Alina Ayyub</h3>
+                    <p>Granddaughter</p>
+                </div>
+
+                <!-- Shahnaj & Mustakim -->
+                <div class="member">
+                    <h3>Faisal Mustakim</h3>
+                    <p>Grandson</p>
+                </div>
+                <div class="member">
+                    <h3>Shagufi Mustakim</h3>
+                    <p>Granddaughter</p>
+                </div>
+                <div class="member">
+                    <h3>Afzal Mustakim</h3>
+                    <p>Grandson</p>
+                </div>
+
+                <!-- Asad & Shabnam -->
+                <div class="member">
+                    <h3>Rehan Asad Khan</h3>
+                    <p>Grandson</p>
+                </div>
+                <div class="member">
+                    <h3>Aliya Asad</h3>
+                    <p>Granddaughter</p>
+                </div>
+                <div class="member">
+                    <h3>Arham Asad Khan</h3>
+                    <p>Grandson</p>
+                </div>
+
+                <!-- Nasreen & Shameem -->
+                <div class="member">
+                    <h3>Suhail Shameem</h3>
+                    <p>Grandson</p>
+                </div>
+                <div class="member">
+                    <h3>Bushra Shameem</h3>
+                    <p>Granddaughter</p>
+                </div>
+                <div class="member">
+                    <h3>Anam Shameem</h3>
+                    <p>Granddaughter</p>
+                </div>
+                <div class="member">
+                    <h3>Hamza (Sadiq) Shameem</h3>
+                    <p>Grandson</p>
+                </div>
+
+                <!-- Sajid & Farhana -->
+                <div class="member">
+                    <h3>Bilal Sajid Khan</h3>
+                    <p>Grandson</p>
+                </div>
+                <div class="member">
+                    <h3>Fariha Sajid</h3>
+                    <p>Granddaughter</p>
+                </div>
+
+                <!-- Wajid & Anjum (Sweety) -->
+                <div class="member">
+                    <h3>Wania Wajid</h3>
+                    <p>Granddaughter</p>
+                </div>
+                <div class="member">
+                    <h3>Azhaan Wajid Khan</h3>
+                    <p>Grandson</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p style="text-align:center; margin-top:2.5rem; font-style:italic; color:#555;">
+            "From humble beginnings in the fields to a thriving multi-generational family enterprise —<br>
+            a legacy of love, trust, vision, and perseverance now flourishing through the third generation."
+        </p>
+    </div>
+
+    <div class="journey">
+        <h2>The Journey of Design Tech Family</h2>
+
+        <div class="journey-content">
+            <p>The story of <span class="highlight">Design Tech</span> begins long before the company itself — it begins with a family rooted in love, trust, and unbreakable bonds.</p>
+
+            <p>It all started when <strong>Rahimulla Khan</strong> married <strong>Rasidan Khatoon</strong>. A year later, they were blessed with a son, <strong>Salamtullah Khan</strong>.</p>
+
+            <p>One day, while young Salamtullah was working in his father’s fields, a farmer approached Rahimulla Khan. The farmer hesitated at first, nervous to speak, but Rahimulla smiled warmly and said, “Don’t worry, I know everything. You have come to offer your daughter’s hand in marriage to my son. I gladly accept this proposal.” In that moment, Salamtullah felt shy, but his heart was filled with quiet joy.</p>
+
+            <p>Soon after, Salamtullah married <strong>Nafisa Khatoon</strong>. A few years later, the couple was blessed with seven beautiful children: <strong>Yahya Khan</strong> (1st son), <strong>Ayyub Khan</strong> (2nd son), <strong>Shahnaj Khatoon</strong> (1st daughter), <strong>Asad Khan</strong> (3rd son), <strong>Nasreen Khatoon</strong> (2nd daughter), <strong>Sajid Khan</strong> (4th son), and <strong>Wajid Khan</strong> (5th son).</p>
+
+            <p>Today, this legacy continues to blossom with a vibrant third generation — the grandchildren — who carry forward the same values of hard work, unity, faith, and innovation. From rural roots to a modern enterprise, <span class="highlight">Design Tech</span> stands as a living testament to family, sacrifice, and vision across three generations.</p>
+
+            <p><strong>We don’t just build products. We build a legacy.</strong></p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2025 Design Tech Family — Honoring the Past, Building the Future</p>
+</footer>
+
+</body>
+</html>
